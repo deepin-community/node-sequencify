@@ -1,0 +1,12 @@
+node-sequencify (0.0.7-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Tue, 29 Dec 2020 01:23:35 +0100
+
+node-sequencify (0.0.7-1) unstable; urgency=low
+
+  * Initial release (Closes: #846947)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 04 Dec 2016 21:19:58 +0530
