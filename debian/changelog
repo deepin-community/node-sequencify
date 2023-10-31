@@ -1,9 +1,32 @@
-node-sequencify (0.0.7-1.1) unstable; urgency=medium
+node-sequencify (0.0.7+~0.1.0-1) unstable; urgency=medium
 
-  * Non maintainer upload by the Reproducible Builds team.
-  * No source change upload to rebuild on buildd with .buildinfo files.
+  * Team upload
 
- -- Holger Levsen <holger@debian.org>  Tue, 29 Dec 2020 01:23:35 +0100
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+  * Apply multi-arch hints.
+    + node-sequencify: Add Multi-Arch: foreign.
+
+  [ Yadd ]
+  * Remove empty leading paragraph in Description.
+  * Bump debhelper from old 12 to 13.
+  * Declare compliance with policy 4.6.0
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Update debian/watch to use npm registry
+  * Drop dependency to nodejs
+  * Use dh-sequence-nodejs auto install
+  * Embed typescript declarations and repack
+
+ -- Yadd <yadd@debian.org>  Tue, 18 Jan 2022 06:42:59 +0100
 
 node-sequencify (0.0.7-1) unstable; urgency=low
 

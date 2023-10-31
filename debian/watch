@@ -1,9 +1,8 @@
-version=3
-# It is not recommended use fakeupstream. Please investigate more.
-# Origin url: https://github.com/robrich/sequencify
+version=4
+# It is not recommended use npmregistry. Please investigate more.
 # Take a look at https://wiki.debian.org/debian/watch/
-# See also fakeupstream: http://anonscm.debian.org/viewvc/qa/trunk/cgi-bin/fakeupstream.cgi?view=markup
-opts=\
-dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
-filenamemangle=s/.*=// \
- http://qa.debian.org/cgi-bin/fakeupstream.cgi?upstream=npmjs/sequencify .*=sequencify-(\d.*)\.(?:tgz|tar\.(?:gz|bz2|xz))
+opts="searchmode=plain,pgpmode=none" \
+ https://registry.npmjs.org/sequencify https://registry.npmjs.org/sequencify/-/sequencify-(\d[\d\.]*)@ARCHIVE_EXT@ group
+
+opts="searchmode=plain,component=types-sequencify,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-sequencify-$1/" \
+ https://registry.npmjs.org/@types/sequencify https://registry.npmjs.org/@types/sequencify/-/sequencify-([\d\.]+)@ARCHIVE_EXT@ group
